@@ -1,1 +1,245 @@
+/* =========================
+   NOVAFUND STYLE.CSS
+========================= */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#0b1120;
+color:#fff;
+overflow-x:hidden;
+}
+
+.container{
+width:90%;
+max-width:1250px;
+margin:auto;
+}
+
+a{
+text-decoration:none;
+color:white;
+}
+
+ul{
+list-style:none;
+}
+
+/* ================= HEADER ================= */
+
+.header{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+background:#111827;
+padding:18px 0;
+z-index:999;
+box-shadow:0 0 20px rgba(0,0,0,.35);
+}
+
+.header .container{
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.logo{
+display:flex;
+align-items:center;
+gap:10px;
+}
+
+.logo i{
+font-size:30px;
+color:#f5b301;
+}
+
+.logo h2{
+font-size:30px;
+color:#f5b301;
+}
+
+nav ul{
+display:flex;
+gap:35px;
+}
+
+nav ul li a{
+font-size:16px;
+transition:.3s;
+}
+
+nav ul li a:hover{
+color:#f5b301;
+}
+
+.nav-buttons{
+display:flex;
+gap:15px;
+}
+
+.login-btn{
+padding:10px 22px;
+border:2px solid #f5b301;
+border-radius:30px;
+transition:.3s;
+}
+
+.login-btn:hover{
+background:#f5b301;
+color:#111;
+}
+
+.register-btn{
+padding:10px 22px;
+background:#f5b301;
+border-radius:30px;
+font-weight:600;
+color:#111;
+transition:.3s;
+}
+
+.register-btn:hover{
+transform:translateY(-3px);
+box-shadow:0 0 20px #f5b301;
+}
+
+/* ================= HERO ================= */
+
+.hero{
+padding:170px 0 100px;
+}
+
+.hero-content{
+display:flex;
+align-items:center;
+justify-content:space-between;
+gap:60px;
+}
+
+.hero-left{
+flex:1;
+}
+
+.tag{
+display:inline-block;
+background:#1f2937;
+padding:10px 18px;
+border-radius:30px;
+color:#f5b301;
+margin-bottom:25px;
+}
+
+.hero-left h1{
+font-size:62px;
+line-height:1.2;
+margin-bottom:25px;
+}
+
+.hero-left p{
+color:#b6c0d0;
+font-size:18px;
+line-height:1.8;
+margin-bottom:35px;
+}
+
+.hero-buttons{
+display:flex;
+gap:20px;
+}
+
+.primary-btn{
+padding:15px 35px;
+background:#f5b301;
+border-radius:30px;
+font-weight:700;
+color:#111;
+transition:.3s;
+}
+
+.primary-btn:hover{
+transform:translateY(-4px);
+box-shadow:0 0 30px rgba(245,179,1,.5);
+}
+
+.secondary-btn{
+padding:15px 35px;
+border:2px solid #f5b301;
+border-radius:30px;
+transition:.3s;
+}
+
+.secondary-btn:hover{
+background:#f5b301;
+color:#111;
+}
+
+/* ================= DASHBOARD CARD ================= */
+
+.hero-right{
+flex:1;
+display:flex;
+justify-content:center;
+}
+
+.dashboard-card{
+width:420px;
+background:#161f31;
+padding:35px;
+border-radius:20px;
+border:1px solid rgba(255,255,255,.06);
+box-shadow:0 20px 50px rgba(0,0,0,.35);
+}
+
+.card-top{
+display:flex;
+justify-content:space-between;
+margin-bottom:25px;
+}
+
+.online{
+color:#18d26e;
+}
+
+.dashboard-card h1{
+font-size:48px;
+color:#f5b301;
+margin-bottom:10px;
+}
+
+.dashboard-card p{
+color:#b9c2d0;
+margin-bottom:25px;
+}
+
+.mini-cards{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:15px;
+}
+
+.mini-cards div{
+background:#202b42;
+padding:18px;
+border-radius:15px;
+text-align:center;
+}
+
+.mini-cards h4{
+color:#f5b301;
+font-size:24px;
+margin-bottom:8px;
+}
+
+.mini-cards span{
+font-size:14px;
+color:#b9c2d0;
+  }
 
