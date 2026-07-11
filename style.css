@@ -755,4 +755,73 @@ font-size:36px;
 font-size:22px;
 }
 
-                                             }
+  /* Sticky Header */
+
+.sticky{
+
+background:#0b1120!important;
+box-shadow:0 10px 30px rgba(0,0,0,.35);
+
+}
+
+/* Active Menu */
+
+nav ul li a.active{
+
+color:var(--primary);
+
+}
+
+/* Scroll Animation */
+
+.feature-card,
+.service-card,
+.stat-card,
+.about-card,
+.why-card,
+.faq-item,
+.contact-card{
+
+opacity:0;
+transform:translateY(50px);
+transition:.8s;
+
+}
+
+.show{
+
+opacity:1;
+transform:translateY(0);
+
+}
+
+/* Ripple */
+
+.btn-primary,
+.btn-outline{
+
+position:relative;
+overflow:hidden;
+
+}
+
+.ripple{
+
+position:absolute;
+border-radius:50%;
+background:rgba(255,255,255,.35);
+transform:scale(0);
+animation:ripple .6s linear;
+
+}
+
+@keyframes ripple{
+
+to{
+
+transform:scale(4);
+opacity:0;
+
+}
+
+}                                           }
