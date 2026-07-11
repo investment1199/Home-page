@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
 
 <meta charset="UTF-8">
@@ -8,65 +7,61 @@
 
 <title>NovaFund | Digital Finance Platform</title>
 
-<meta name="description" content="Modern FinTech Demo Platform">
+<meta name="description" content="NovaFund - Modern Digital Finance Platform">
 
 <link rel="stylesheet" href="style.css">
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
 <link rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css">
 
 </head>
 
 <body>
 
-<!-- ================= NAVBAR ================= -->
-
 <header class="header">
 
 <div class="container">
 
-<div class="logo">
-
+<a href="index.html" class="logo">
 <i class="fa-solid fa-chart-line"></i>
-
-<h2>NovaFund</h2>
-
-</div>
+<span>NovaFund</span>
+</a>
 
 <nav>
 
 <ul>
 
-<li><a href="#">Home</a></li>
+<li><a href="index.html">Home</a></li>
 
-<li><a href="#features">Features</a></li>
+<li><a href="dashboard.html">Dashboard</a></li>
 
-<li><a href="#plans">Plans</a></li>
+<li><a href="profile.html">Profile</a></li>
 
-<li><a href="#about">About</a></li>
+<li><a href="transactions.html">Transactions</a></li>
 
-<li><a href="#faq">FAQ</a></li>
+<li><a href="support.html">Support</a></li>
 
-<li><a href="#contact">Contact</a></li>
+<li><a href="about.html">About</a></li>
+
+<li><a href="contact.html">Contact</a></li>
 
 </ul>
 
 </nav>
 
-<div class="nav-buttons">
+<div class="header-buttons">
 
-<a href="login.html" class="login-btn">
-
+<a href="login.html" class="btn-outline">
 Login
-
 </a>
 
-<a href="register.html" class="register-btn">
-
-Register
-
+<a href="register.html" class="btn-primary">
+Create Account
 </a>
 
 </div>
@@ -75,44 +70,37 @@ Register
 
 </header>
 
-<!-- ================= HERO ================= -->
-
 <section class="hero">
 
-<div class="container hero-content">
+<div class="container hero-grid">
 
 <div class="hero-left">
 
 <span class="tag">
-
-Modern FinTech Platform
-
+Modern Digital Finance
 </span>
 
 <h1>
 
-Secure Digital Finance
-
-For The Future
+Secure Digital Finance Platform
 
 </h1>
 
 <p>
 
-Experience a clean dashboard, secure account management,
-analytics and responsive design in this educational fintech demo.
+Manage your account, view your activity, track transactions and access your personal dashboard through one secure platform.
 
 </p>
 
 <div class="hero-buttons">
 
-<a href="#" class="primary-btn">
+<a href="register.html" class="btn-primary">
 
 Get Started
 
 </a>
 
-<a href="#" class="secondary-btn">
+<a href="about.html" class="btn-outline">
 
 Learn More
 
@@ -124,83 +112,13 @@ Learn More
 
 <div class="hero-right">
 
-<div class="dashboard-card">
+<div class="hero-card">
 
-<div class="card-top">
+<h3>Account Overview</h3>
 
-<h3>Demo Wallet</h3>
+<h2>$25,480.00</h2>
 
-<span class="online">
-
-● Online
-
-</span>
-
-</div>
-
-<h1>
-
-$25,480
-
-</h1>
-
-<p>
-
-Available Balance
-
-</p>
-
-<div class="mini-cards">
-
-<div>
-
-<h4>
-
-1,250+
-
-</h4>
-
-<span>
-
-Users
-
-</span>
-
-</div>
-
-<div>
-
-<h4>
-
-99%
-
-</h4>
-
-<span>
-
-Security
-
-</span>
-
-</div>
-
-<div>
-
-<h4>
-
-24/7
-
-</h4>
-
-<span>
-
-Support
-
-</span>
-
-</div>
-
-</div>
+<p>Available Balance</p>
 
 </div>
 
@@ -210,18 +128,22 @@ Support
 
 </section>
 
-<!-- Part 2 Starts Here -->
+<!-- PART 2 START -->
   <!-- ================= FEATURES ================= -->
 
-<section class="features" id="features">
+<section class="features">
 
 <div class="container">
 
-<h2 class="section-title">Why Choose NovaFund</h2>
+<div class="section-header">
 
-<p class="section-text">
-A modern fintech demo with speed, security and a beautiful user experience.
+<h2>Platform Features</h2>
+
+<p>
+Designed for speed, security and a modern digital experience.
 </p>
+
+</div>
 
 <div class="feature-grid">
 
@@ -229,10 +151,10 @@ A modern fintech demo with speed, security and a beautiful user experience.
 
 <i class="fa-solid fa-shield-halved"></i>
 
-<h3>Secure Platform</h3>
+<h3>Security</h3>
 
 <p>
-Advanced security design to protect user accounts.
+Advanced account protection and secure authentication.
 </p>
 
 </div>
@@ -241,34 +163,34 @@ Advanced security design to protect user accounts.
 
 <i class="fa-solid fa-wallet"></i>
 
-<h3>Smart Wallet</h3>
+<h3>Digital Wallet</h3>
 
 <p>
-Simple dashboard with easy balance management.
+Manage your account and monitor balances in one place.
 </p>
 
 </div>
 
 <div class="feature-card">
 
-<i class="fa-solid fa-chart-column"></i>
+<i class="fa-solid fa-chart-simple"></i>
 
 <h3>Analytics</h3>
 
 <p>
-Interactive charts and financial statistics.
+Track activity with a clean and interactive dashboard.
 </p>
 
 </div>
 
 <div class="feature-card">
 
-<i class="fa-solid fa-mobile-screen"></i>
+<i class="fa-solid fa-mobile-screen-button"></i>
 
-<h3>Mobile Friendly</h3>
+<h3>Responsive</h3>
 
 <p>
-Fully responsive interface for all devices.
+Optimized for desktop, tablet and mobile devices.
 </p>
 
 </div>
@@ -281,130 +203,105 @@ Fully responsive interface for all devices.
 
 
 
-<!-- ================= LIVE STATS ================= -->
+<!-- ================= SERVICES ================= -->
+
+<section class="services">
+
+<div class="container">
+
+<div class="section-header">
+
+<h2>Our Services</h2>
+
+<p>
+Explore the tools available through the NovaFund platform.
+</p>
+
+</div>
+
+<div class="service-grid">
+
+<div class="service-card">
+
+<i class="fa-solid fa-user"></i>
+
+<h3>User Dashboard</h3>
+
+<p>
+Access your personal account information from one place.
+</p>
+
+</div>
+
+<div class="service-card">
+
+<i class="fa-solid fa-clock-rotate-left"></i>
+
+<h3>Transaction History</h3>
+
+<p>
+View your account activity and records.
+</p>
+
+</div>
+
+<div class="service-card">
+
+<i class="fa-solid fa-headset"></i>
+
+<h3>Customer Support</h3>
+
+<p>
+Reach support whenever assistance is needed.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- ================= STATS ================= -->
 
 <section class="stats">
 
 <div class="container">
 
-<div class="stat-box">
+<div class="stats-grid">
 
-<h2>25K+</h2>
+<div class="stat-card">
 
-<p>Demo Users</p>
+<h2>50K+</h2>
 
-</div>
-
-<div class="stat-box">
-
-<h2>150+</h2>
-
-<p>Countries</p>
+<p>Registered Users</p>
 
 </div>
 
-<div class="stat-box">
+<div class="stat-card">
+
+<h2>120+</h2>
+
+<p>Countries Served</p>
+
+</div>
+
+<div class="stat-card">
 
 <h2>99.9%</h2>
 
-<p>System Uptime</p>
+<p>Platform Availability</p>
 
 </div>
 
-<div class="stat-box">
+<div class="stat-card">
 
 <h2>24/7</h2>
 
-<p>Support</p>
-
-</div>
-
-</div>
-
-</section>
-
-
-
-<!-- ================= NEXT PART ================= -->
-  <!-- ================= DEMO PLANS ================= -->
-
-<section class="plans" id="plans">
-
-<div class="container">
-
-<h2 class="section-title">Demo Plans</h2>
-
-<p class="section-text">
-Sample plan cards for demonstration purposes only. These are not real investment offers.
-</p>
-
-<div class="plan-grid">
-
-<div class="plan-card">
-
-<h3>Starter</h3>
-
-<h1>$100</h1>
-
-<ul>
-
-<li>✔ Demo Dashboard</li>
-
-<li>✔ Portfolio Preview</li>
-
-<li>✔ Email Support</li>
-
-<li>✔ Mobile Access</li>
-
-</ul>
-
-<a href="#" class="plan-btn">View Demo</a>
-
-</div>
-
-<div class="plan-card popular">
-
-<span class="badge">POPULAR</span>
-
-<h3>Professional</h3>
-
-<h1>$500</h1>
-
-<ul>
-
-<li>✔ Advanced Dashboard</li>
-
-<li>✔ Analytics Preview</li>
-
-<li>✔ Priority Support</li>
-
-<li>✔ Multi Device</li>
-
-</ul>
-
-<a href="#" class="plan-btn">View Demo</a>
-
-</div>
-
-<div class="plan-card">
-
-<h3>Enterprise</h3>
-
-<h1>$1000</h1>
-
-<ul>
-
-<li>✔ Premium Dashboard</li>
-
-<li>✔ Full Analytics</li>
-
-<li>✔ 24/7 Support</li>
-
-<li>✔ Custom Reports</li>
-
-</ul>
-
-<a href="#" class="plan-btn">View Demo</a>
+<p>Customer Support</p>
 
 </div>
 
@@ -414,60 +311,54 @@ Sample plan cards for demonstration purposes only. These are not real investment
 
 </section>
 
+<!-- PART 3 START -->
+  <!-- ================= ABOUT ================= -->
 
-
-
-
-<!-- ================= ABOUT ================= -->
-
-<section class="about" id="about">
+<section class="about">
 
 <div class="container about-grid">
 
-<div class="about-left">
+<div class="about-image">
 
-<h2>Modern Financial Experience</h2>
+<div class="about-card">
+
+<i class="fa-solid fa-building-columns"></i>
+
+<h2>Professional Platform</h2>
+
+<p>
+Modern interface designed for speed, security and simplicity.
+</p>
+
+</div>
+
+</div>
+
+<div class="about-content">
+
+<span class="section-tag">
+ABOUT US
+</span>
+
+<h2>Designed For Modern Digital Finance</h2>
 
 <p>
 
-NovaFund is a demo financial platform created to showcase a modern dashboard,
-beautiful interface, responsive layout and professional fintech design.
+NovaFund provides a clean and responsive digital platform with a professional dashboard, account management tools, transaction history, profile management and customer support.
 
 </p>
 
 <p>
 
-This website is intended for educational and UI demonstration purposes.
+Built with modern technologies and optimized for desktop, tablet and mobile devices.
 
 </p>
 
-</div>
+<a href="about.html" class="btn-primary">
 
-<div class="about-right">
+Read More
 
-<div class="about-card">
-
-<h3>Fast Interface</h3>
-
-<p>Responsive design with modern components.</p>
-
-</div>
-
-<div class="about-card">
-
-<h3>Modern Dashboard</h3>
-
-<p>Beautiful statistics and user panels.</p>
-
-</div>
-
-<div class="about-card">
-
-<h3>Secure Design</h3>
-
-<p>Professional layout focused on usability.</p>
-
-</div>
+</a>
 
 </div>
 
@@ -475,36 +366,82 @@ This website is intended for educational and UI demonstration purposes.
 
 </section>
 
-<!-- ===== Part 4 Starts Here ===== -->
-  <!-- ================= FAQ ================= -->
 
-<section class="faq" id="faq">
+
+<!-- ================= WHY CHOOSE US ================= -->
+
+<section class="why-us">
 
 <div class="container">
 
-<h2 class="section-title">Frequently Asked Questions</h2>
+<div class="section-header">
 
-<div class="faq-box">
+<h2>Why Choose NovaFund</h2>
 
-<div class="faq-item">
-<h3>Is NovaFund a real investment platform?</h3>
 <p>
-No. This website is a demonstration of a modern fintech interface for educational purposes.
+
+Professional design with powerful features.
+
 </p>
+
 </div>
 
-<div class="faq-item">
-<h3>Can I create an account?</h3>
+<div class="why-grid">
+
+<div class="why-card">
+
+<i class="fa-solid fa-lock"></i>
+
+<h3>Account Security</h3>
+
 <p>
-Yes. The login and registration pages are part of the demo user interface.
+
+Strong authentication and secure account access.
+
 </p>
+
 </div>
 
-<div class="faq-item">
-<h3>Is this mobile responsive?</h3>
+<div class="why-card">
+
+<i class="fa-solid fa-gauge-high"></i>
+
+<h3>Fast Performance</h3>
+
 <p>
-Yes. The website is designed to work on desktop, tablet and mobile devices.
+
+Optimized pages with smooth loading experience.
+
 </p>
+
+</div>
+
+<div class="why-card">
+
+<i class="fa-solid fa-laptop-code"></i>
+
+<h3>Modern Technology</h3>
+
+<p>
+
+Built using HTML, CSS and JavaScript with responsive design.
+
+</p>
+
+</div>
+
+<div class="why-card">
+
+<i class="fa-solid fa-headset"></i>
+
+<h3>Customer Support</h3>
+
+<p>
+
+Dedicated support section for user assistance.
+
+</p>
+
 </div>
 
 </div>
@@ -515,31 +452,53 @@ Yes. The website is designed to work on desktop, tablet and mobile devices.
 
 
 
-<!-- ================= CONTACT ================= -->
+<!-- ================= FAQ ================= -->
 
-<section class="contact" id="contact">
+<section class="faq">
 
 <div class="container">
 
-<h2 class="section-title">Contact Us</h2>
+<div class="section-header">
 
-<p class="section-text">
+<h2>Frequently Asked Questions</h2>
 
-Email: support@novafund.com
+</div>
+
+<div class="faq-item">
+
+<h3>How do I create an account?</h3>
+
+<p>
+
+Click the Register button and complete the registration form.
+
+</p>
+
+</div>
+
+<div class="faq-item">
+
+<h3>Can I access the platform on mobile?</h3>
+
+<p>
+
+Yes. The website is fully responsive for mobile devices.
 
 </p>
 
-<p class="section-text">
+</div>
 
-Phone: +000 000 0000
+<div class="faq-item">
+
+<h3>Where can I contact support?</h3>
+
+<p>
+
+Visit the Support or Contact page anytime.
 
 </p>
 
-<p class="section-text">
-
-Available 24/7
-
-</p>
+</div>
 
 </div>
 
@@ -547,74 +506,32 @@ Available 24/7
 
 
 
-<!-- ================= FOOTER ================= -->
+<!-- ================= CTA ================= -->
 
-<footer>
+<section class="cta">
 
-<div class="container footer-grid">
+<div class="container">
 
-<div>
+<h2>
 
-<h2>NovaFund</h2>
+Ready to Get Started?
+
+</h2>
 
 <p>
 
-Modern FinTech Demo Platform
+Create your account and explore the platform.
 
 </p>
 
-</div>
+<a href="register.html" class="btn-primary">
 
-<div>
+Create Account
 
-<h3>Quick Links</h3>
-
-<ul>
-
-<li><a href="#">Home</a></li>
-
-<li><a href="#features">Features</a></li>
-
-<li><a href="#plans">Plans</a></li>
-
-<li><a href="#faq">FAQ</a></li>
-
-</ul>
+</a>
 
 </div>
 
-<div>
+</section>
 
-<h3>Support</h3>
-
-<ul>
-
-<li>Email Support</li>
-
-<li>Help Center</li>
-
-<li>Privacy Policy</li>
-
-<li>Terms</li>
-
-</ul>
-
-</div>
-
-</div>
-
-<hr>
-
-<p class="copyright">
-
-© 2026 NovaFund. Demo FinTech Website. All Rights Reserved.
-
-</p>
-
-</footer>
-
-<script src="app.js"></script>
-
-</body>
-
-</html>
+<!-- PART 4 START -->
