@@ -1,103 +1,56 @@
-// ===============================
-// NovaFund App.js
-// ===============================
+/* =====================================
+   NovaFund Professional App JS
+===================================== */
 
 // Sticky Header
 
-window.addEventListener("scroll", () => {
-
 const header = document.querySelector(".header");
 
-if(window.scrollY > 50){
+window.addEventListener("scroll", () => {
 
-header.style.background="#0b1120";
-header.style.boxShadow="0 10px 25px rgba(0,0,0,.35)";
+if(window.scrollY > 80){
+
+header.classList.add("sticky");
 
 }else{
 
-header.style.background="#111827";
-header.style.boxShadow="none";
+header.classList.remove("sticky");
 
 }
 
 });
 
 
-// ===============================
-// Counter Animation
-// ===============================
 
-const counters=document.querySelectorAll(".stat-box h2");
+// Active Menu
 
-const speed=80;
+const navLinks=document.querySelectorAll("nav ul li a");
 
-counters.forEach(counter=>{
+navLinks.forEach(link=>{
 
-const update=()=>{
+link.addEventListener("click",()=>{
 
-const target=counter.innerText.replace(/\D/g,"");
+navLinks.forEach(item=>item.classList.remove("active"));
 
-const count=+counter.getAttribute("data-count") || 0;
-
-const inc=Math.ceil(target/speed);
-
-if(count<target){
-
-counter.setAttribute("data-count",count+inc);
-
-counter.innerText=(count+inc)+"+";
-
-setTimeout(update,20);
-
-}else{
-
-counter.innerText=target+"+";
-
-}
-
-};
-
-update();
-
-});
-
-
-// ===============================
-// Button Hover Effect
-// ===============================
-
-const buttons=document.querySelectorAll("button,.primary-btn,.plan-btn");
-
-buttons.forEach(btn=>{
-
-btn.addEventListener("mouseenter",()=>{
-
-btn.style.transform="scale(1.05)";
-
-});
-
-btn.addEventListener("mouseleave",()=>{
-
-btn.style.transform="scale(1)";
+link.classList.add("active");
 
 });
 
 });
 
 
-// ===============================
+
 // Smooth Scroll
-// ===============================
 
 document.querySelectorAll('a[href^="#"]').forEach(anchor=>{
 
 anchor.addEventListener("click",function(e){
 
-e.preventDefault();
-
 const target=document.querySelector(this.getAttribute("href"));
 
 if(target){
+
+e.preventDefault();
 
 target.scrollIntoView({
 
@@ -112,9 +65,9 @@ behavior:"smooth"
 });
 
 
-// ===============================
-// Fade Animation
-// ===============================
+
+
+// Scroll Animation
 
 const observer=new IntersectionObserver(entries=>{
 
@@ -128,17 +81,110 @@ entry.target.classList.add("show");
 
 });
 
+},{threshold:.15});
+
+document.querySelectorAll(
+
+".feature-card,.service-card,.stat-card,.about-card,.why-card,.faq-item,.contact-card"
+
+).forEach(el=>observer.observe(el));
+
+
+
+
+// Counter Animation
+
+const counters=document.querySelectorAll(".stat-card h2");
+
+counters.forEach(counter=>{
+
+const updateCounter=()=>{
+
+const target=counter.innerText.replace(/\D/g,'');
+
+const current=+counter.getAttribute("data-count")||0;
+
+const increment=Math.ceil(target/100);
+
+if(current<target){
+
+counter.setAttribute("data-count",current+increment);
+
+counter.innerText=(current+increment)+"+";
+
+setTimeout(updateCounter,25);
+
+}else{
+
+counter.innerText=target+"+";
+
+}
+
+};
+
+updateCounter();
+
 });
 
-document.querySelectorAll(".feature-card,.plan-card,.about-card,.faq-item,.stat-box").forEach(el=>{
 
-observer.observe(el);
+
+
+// Hero Card Animation
+
+const heroCard=document.querySelector(".hero-card");
+
+if(heroCard){
+
+setInterval(()=>{
+
+heroCard.style.transform="translateY(-8px)";
+
+setTimeout(()=>{
+
+heroCard.style.transform="translateY(0px)";
+
+},900);
+
+},2500);
+
+}
+
+
+
+
+// Button Ripple Effect
+
+document.querySelectorAll(".btn-primary,.btn-outline").forEach(btn=>{
+
+btn.addEventListener("click",function(e){
+
+const circle=document.createElement("span");
+
+const diameter=Math.max(this.clientWidth,this.clientHeight);
+
+circle.style.width=circle.style.height=diameter+"px";
+
+circle.style.left=e.offsetX-diameter/2+"px";
+
+circle.style.top=e.offsetY-diameter/2+"px";
+
+circle.classList.add("ripple");
+
+this.appendChild(circle);
+
+setTimeout(()=>{
+
+circle.remove();
+
+},600);
+
+});
 
 });
 
 
-// ===============================
-// Welcome
-// ===============================
+
+
+// Console
 
 console.log("NovaFund Loaded Successfully");
